@@ -1,10 +1,10 @@
-# 🏥 Healthcare Patient Records — SQL Analysis
+# Healthcare Patient Records — SQL Analysis
 
 A comprehensive SQL analysis of 10,000 synthetic patient records using PostgreSQL, covering billing patterns, length of stay, doctor performance, cost segmentation, and a custom-built readmission risk scoring system.
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 To analyse patient and hospital data to answer key healthcare analytics questions:
 - Which medical conditions, doctors, and hospitals drive the most cost and patient volume?
@@ -14,7 +14,7 @@ To analyse patient and hospital data to answer key healthcare analytics question
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 📂 Healthcare-Patient-SQL-Analysis/
@@ -31,7 +31,7 @@ To analyse patient and hospital data to answer key healthcare analytics question
 
 ---
 
-## 🗄️ Dataset
+## Dataset
 
 **Source:** Kaggle — [Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset)
 
@@ -46,7 +46,7 @@ To analyse patient and hospital data to answer key healthcare analytics question
 
 ---
 
-## 🔑 Key Findings
+## Key Findings
 
 1. **Test result distribution is fairly balanced** — Normal, Abnormal, and Inconclusive results are spread close to evenly across the dataset, with no single result type dominating.
 2. **One hospital significantly outpaces others in total billing revenue** — driven by both higher patient volume and a broader base of unique doctors.
@@ -56,7 +56,7 @@ To analyse patient and hospital data to answer key healthcare analytics question
 
 ---
 
-## 🛠️ SQL Skills Demonstrated
+## SQL Skills Demonstrated
 
 | Skill | Where it's used |
 |---|---|
@@ -71,7 +71,7 @@ To analyse patient and hospital data to answer key healthcare analytics question
 
 ---
 
-## 📊 Featured Query — Readmission Risk Score
+## Featured Query — Readmission Risk Score
 
 ```sql
 WITH stay_avg AS (
@@ -113,7 +113,7 @@ ORDER BY patient_count DESC;
 
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
 1. Install **PostgreSQL** and **pgAdmin 4**
 2. Create a new database: `healthcare_analysis`
@@ -123,7 +123,7 @@ ORDER BY patient_count DESC;
 
 ---
 
-## 💡 What I Learned
+## What I Learned
 
 - The distinction between `COUNT(column)` and `COUNT(DISTINCT column)` — and how using the wrong one silently inflates results without throwing an error.
 - Why a column alias created via `CASE WHEN` cannot be reused inside another `CASE WHEN` in `ORDER BY` after a `GROUP BY` — and how to solve it by carrying a numeric sort key through the grouping instead of re-deriving it.
@@ -134,13 +134,12 @@ ORDER BY patient_count DESC;
 
 ---
 
-## 🙋 About
+## About
 
-Built by **[Your Name]** as part of a data analyst portfolio project.
+Built by **Atharv Dhole** as part of a data analyst portfolio project.
 
-- 🔗 LinkedIn: [your-linkedin-url]
-- 📧 Email: your@email.com
+- 🔗 LinkedIn: https://www.linkedin.com/in/atharv-dhole/
+- 📧 Email: atharvdhole22@gmail.com
 
 ---
 
-*If you found this useful, please ⭐ star the repository!*
